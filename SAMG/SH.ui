@@ -384,6 +384,12 @@ QPushButton {
      <property name="shortcut">
       <string/>
      </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>3</number>
+     </property>
     </widget>
     <widget class="QPushButton" name="B_2">
      <property name="geometry">
@@ -10493,85 +10499,18 @@ background-color: rgb(217, 225, 232);
     </widget>
    </widget>
   </widget>
-  <widget class="QStackedWidget" name="stackedWidget_3">
+  <widget class="QStackedWidget" name="TBD_Stack">
    <property name="geometry">
     <rect>
      <x>1730</x>
      <y>690</y>
-     <width>821</width>
-     <height>671</height>
+     <width>820</width>
+     <height>670</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>-1</number>
    </property>
-   <widget class="QWidget" name="page_3">
-    <widget class="QScrollArea" name="sa_TBD_0">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>781</width>
-       <height>671</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
-border: 1px solid black;
-background-color: #d9e1e8;</string>
-     </property>
-     <property name="widgetResizable">
-      <bool>true</bool>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>779</width>
-        <height>669</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_4">
-    <widget class="QScrollArea" name="sa_TBD_1">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>821</width>
-       <height>671</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
-border: 1px solid black;
-background-color: rgb(217, 225, 232);
-</string>
-     </property>
-     <property name="widgetResizable">
-      <bool>true</bool>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents_3">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>819</width>
-        <height>669</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-   </widget>
   </widget>
  </widget>
  <resources/>

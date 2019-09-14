@@ -3,7 +3,7 @@
 # Form implementation generated from reading ui file 'SH.ui',
 # licensing of 'SH.ui' applies.
 #
-# Created: Sat Sep 14 09:39:19 2019
+# Created: Sat Sep 14 13:05:24 2019
 #      by: pyside2-uic  running on PySide2 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
@@ -204,6 +204,8 @@ class Ui_MainForm(object):
 "    text-align: left;\n"
 "}")
         self.B_1.setShortcut("")
+        self.B_1.setAutoExclusive(True)
+        self.B_1.setAutoRepeatDelay(3)
         self.B_1.setObjectName("B_1")
         self.B_2 = QtWidgets.QPushButton(self.Pur_frame)
         self.B_2.setGeometry(QtCore.QRect(10, 130, 371, 71))
@@ -1829,7 +1831,6 @@ class Ui_MainForm(object):
 "border-bottom-left-radius: 10px;\n"
 "background-color: rgb(234, 234, 234);\n"
 "border: 1px solid black;")
-        self.pur_title_20.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.pur_title_20.setWordWrap(True)
         self.pur_title_20.setObjectName("pur_title_20")
         self.pur_title_21 = QtWidgets.QLabel(self.sa_7_w_11)
@@ -5110,49 +5111,14 @@ class Ui_MainForm(object):
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.sa_FBD_0.setWidget(self.scrollAreaWidgetContents)
         self.stackedWidget_2.addWidget(self.page)
-        self.stackedWidget_3 = QtWidgets.QStackedWidget(MainForm)
-        self.stackedWidget_3.setGeometry(QtCore.QRect(1730, 690, 821, 671))
-        self.stackedWidget_3.setObjectName("stackedWidget_3")
-        self.page_3 = QtWidgets.QWidget()
-        self.page_3.setObjectName("page_3")
-        self.sa_TBD_0 = QtWidgets.QScrollArea(self.page_3)
-        self.sa_TBD_0.setGeometry(QtCore.QRect(0, 0, 781, 671))
-        self.sa_TBD_0.setStyleSheet("border-top-left-radius: 10px;\n"
-"border-top-right-radius: 10px;\n"
-"border-bottom-right-radius: 10px;\n"
-"border-bottom-left-radius: 10px;\n"
-"border: 1px solid black;\n"
-"background-color: #d9e1e8;")
-        self.sa_TBD_0.setWidgetResizable(True)
-        self.sa_TBD_0.setObjectName("sa_TBD_0")
-        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 779, 669))
-        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
-        self.sa_TBD_0.setWidget(self.scrollAreaWidgetContents_2)
-        self.stackedWidget_3.addWidget(self.page_3)
-        self.page_4 = QtWidgets.QWidget()
-        self.page_4.setObjectName("page_4")
-        self.sa_TBD_1 = QtWidgets.QScrollArea(self.page_4)
-        self.sa_TBD_1.setGeometry(QtCore.QRect(0, 0, 821, 671))
-        self.sa_TBD_1.setStyleSheet("border-top-left-radius: 10px;\n"
-"border-top-right-radius: 10px;\n"
-"border-bottom-right-radius: 10px;\n"
-"border-bottom-left-radius: 10px;\n"
-"border: 1px solid black;\n"
-"background-color: rgb(217, 225, 232);\n"
-"")
-        self.sa_TBD_1.setWidgetResizable(True)
-        self.sa_TBD_1.setObjectName("sa_TBD_1")
-        self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 819, 669))
-        self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
-        self.sa_TBD_1.setWidget(self.scrollAreaWidgetContents_3)
-        self.stackedWidget_3.addWidget(self.page_4)
+        self.TBD_Stack = QtWidgets.QStackedWidget(MainForm)
+        self.TBD_Stack.setGeometry(QtCore.QRect(1730, 690, 820, 670))
+        self.TBD_Stack.setObjectName("TBD_Stack")
 
         self.retranslateUi(MainForm)
         self.stackedWidget.setCurrentIndex(5)
         self.stackedWidget_2.setCurrentIndex(0)
-        self.stackedWidget_3.setCurrentIndex(1)
+        self.TBD_Stack.setCurrentIndex(-1)
         QtCore.QMetaObject.connectSlotsByName(MainForm)
 
     def retranslateUi(self, MainForm):
